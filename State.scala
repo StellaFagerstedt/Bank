@@ -15,6 +15,7 @@ def Start () : Unit =
     LoggedOn(getUserbyUsername(input))
 
 def CreateUser(): Unit =
+    println("Enter username: ")
     val username = scala.io.StdIn.readLine()
     Users.append(User(username))
     WriteAll()
